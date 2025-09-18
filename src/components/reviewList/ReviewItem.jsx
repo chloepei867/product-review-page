@@ -1,6 +1,7 @@
 import StarRating from "../StarRating";
+import Avatar from "react-avatar";
 
-export default function ReviewItem({ review }) {
+export default function ReviewItem({ review, key }) {
   const formatted = (dateStr) => {
     return new Date(dateStr).toLocaleDateString("en-US", {
       year: "numeric",
@@ -10,16 +11,20 @@ export default function ReviewItem({ review }) {
   };
 
   return (
-    <div className="flex flex-col gap-4 self-stretch">
+    <div key={key} className="flex flex-col gap-4 self-stretch">
       {/* avatar details */}
       <div className="flex items-center gap-4 self-stretch">
         {/* avatar */}
         <div className="flex w-12 h-12 rounded-full overflow-hidden">
-          <img
-            className="flex w-full h-full object-cover"
-            src={review.userAvatar}
-            alt={review.userName}
-          />
+          {review.userAvatar !== null ? (
+            <img
+              className="flex w-full h-full object-cover"
+              src={review.userAvatar}
+              alt={review.userName}
+            />
+          ) : (
+            <Avatar name={review.userName} size={48} />
+          )}
         </div>
         {/* details */}
         <div className="flex flex-col gap-1 grow">
