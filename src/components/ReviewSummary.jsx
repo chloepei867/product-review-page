@@ -5,7 +5,7 @@ import ReviewBreakdown from "./ReviewBreakdown";
 
 export default function ReviewSummary() {
   return (
-    <div className="flex flex-col self-stretch px-6 gap-6">
+    <div className="flex flex-col items-center self-stretch px-6 gap-6">
       {/* heading */}
       <div className="flex flex-col gap-2">
         <h2 className="font-semibold text-xl text-neutral-900">
@@ -23,7 +23,9 @@ export default function ReviewSummary() {
       {/* rating values */}
       <ReviewBreakdown />
       {/* write a review button */}
-      <button>Write a Review</button>
+      <button className="w-[153px] flex justify-center items-center gap-1.5 bg-white px-5 py-3 rounded border-[0.5px] border-solid border-neutral-200 shadow-[0px_1px_2px_0_rgb(0_0_0/0.06),_0px_1px_3px_0_rgb(0_0_0/0.10)]">
+        Write a Review
+      </button>
     </div>
   );
 }
