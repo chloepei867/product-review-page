@@ -5,9 +5,9 @@ import ReviewBreakdown from "./reviewBreakdown/ReviewBreakdown";
 
 export default function ReviewSummary() {
   return (
-    <div className="flex flex-col items-center self-stretch px-6 gap-6 md:px-8">
+    <div className="flex flex-col items-center px-6 gap-6 md:px-8 lg:w-[384px] lg:shrink-0">
       {/* heading */}
-      <div className="flex flex-col gap-2 items-start self-stretch">
+      <div className="flex flex-col self-stretch gap-2 items-start">
         <h2 className="font-semibold text-xl text-neutral-900">
           Overall Rating
         </h2>

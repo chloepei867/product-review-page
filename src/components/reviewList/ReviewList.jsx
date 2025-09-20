@@ -11,7 +11,7 @@ export default function ReviewList({ reviews }) {
   const visibleReviews = reviews.slice(0, visibleCount);
 
   return (
-    <div className="flex flex-col items-center gap-6 self-stretch">
+    <div className="flex flex-col items-center gap-6  self-stretch lg:pr-8">
       {/* review list container */}
       <ReviewListContainer reviews={visibleReviews} />
       {/* footer */}

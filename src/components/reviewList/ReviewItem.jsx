@@ -48,7 +48,7 @@ export default function ReviewItem({ review, key }) {
         </div>
       </div>
       {/* review content */}
-      <p className="font-normal text-base text-neutral-600">{review.content}</p>
+      <p className="font-normal text-base text-neutral-900">{review.content}</p>
     </div>
   );
 }

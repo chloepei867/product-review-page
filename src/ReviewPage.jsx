@@ -5,13 +5,13 @@ import reviews from "./data/mergedReviews.json";
 export default function ReviewPage() {
   return (
     <div className="flex flex-col items-center justify-center self-stretch grow py-16 rounded bg-neutral-600">
-      <div className="md:w-[522px] flex flex-col justify-center items-center bg-white rounded-lg">
-        <div className="flex flex-col justify-center items-end gap-4 self-stretch p-6">
+      <div className="md:w-[522px] lg:w-[1008px] flex flex-col justify-center items-center bg-white rounded-lg">
+        <div className="flex flex-col justify-center items-end gap-4 self-stretch p-6 lg:px-8">
           <button className="w-6 h-6">
             <i className="fa-solid fa-xmark text-neutral-900 text-lg"></i>
           </button>
         </div>
-        <div className="flex flex-col items-center gap-10 self-stretch max-h-[70vh] overflow-y-auto">
+        <div className="flex flex-col lg:flex-row lg:gap-8 items-center lg:items-start gap-10 self-stretch max-h-[70vh] overflow-y-auto">
           <ReviewSummary />
           <ReviewList reviews={reviews} />
         </div>
