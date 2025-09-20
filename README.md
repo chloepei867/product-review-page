@@ -2,6 +2,8 @@
 
 A reponsive product review page built with react, js, css, html and tailwind.
 
+https://product-review-page.vercel.app/
+
 ## Features
 
 ### **Dynamic User Avatars**
