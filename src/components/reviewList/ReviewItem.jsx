@@ -23,7 +23,12 @@ export default function ReviewItem({ review, key }) {
               alt={review.userName}
             />
           ) : (
-            <Avatar name={review.userName} size={48} />
+            <Avatar
+              name={review.userName}
+              size={48}
+              color="#e5e7eb"
+              fgColor="#525252"
+            />
           )}
         </div>
         {/* details */}

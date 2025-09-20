@@ -1,7 +1,7 @@
 import StarRating from "./StarRating";
-import ProgressBar from "./ProgressBar";
-import BreakdownItem from "./BreakdownItem";
-import ReviewBreakdown from "./ReviewBreakdown";
+import ProgressBar from "./reviewBreakdown/ProgressBar";
+import BreakdownItem from "./reviewBreakdown/BreakdownItem";
+import ReviewBreakdown from "./reviewBreakdown/ReviewBreakdown";
 
 export default function ReviewSummary() {
   return (

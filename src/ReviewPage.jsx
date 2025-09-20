@@ -1,5 +1,6 @@
 import ReviewList from "./components/reviewList/ReviewList";
 import ReviewSummary from "./components/ReviewSummary";
+import reviews from "./data/mergedReviews.json";
 
 export default function ReviewPage() {
   return (
@@ -12,7 +13,7 @@ export default function ReviewPage() {
         </div>
         <div className="flex flex-col items-center gap-10 self-stretch max-h-[70vh] overflow-y-auto">
           <ReviewSummary />
-          <ReviewList />
+          <ReviewList reviews={reviews} />
         </div>
       </div>
     </div>

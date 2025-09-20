@@ -1,13 +1,21 @@
 import ReviewListContainer from "./ReviewListContainer";
 import ReviewListFooter from "./ReviewListFooter";
 
-export default function ReviewList() {
+import { useState } from "react";
+
+export default function ReviewList({ reviews }) {
+  const [visibleCount, setVisibleCount] = useState(10);
+  const showMore = () => {
+    setVisibleCount((prev) => prev + 10);
+  };
+  const visibleReviews = reviews.slice(0, visibleCount);
+
   return (
     <div className="flex flex-col items-center gap-6 self-stretch">
       {/* review list container */}
-      <ReviewListContainer />
+      <ReviewListContainer reviews={visibleReviews} />
       {/* footer */}
-      <ReviewListFooter />
+      <ReviewListFooter showMore={showMore} />
     </div>
   );
 }
